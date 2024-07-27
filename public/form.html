@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Formulaire de Réflexion Personnelle</title>
+</head>
+
+<body>
+
+    <div class="container-fluid p-3">
+        <div class="row mb-3">
+            <div class="col-12">
+                <img src="images/logo.jpg" alt="Logo" class="img-fluid logo">
+            </div>
+        </div>
+        <div class="row formul">
+            <div class="container formulaire">
+                <div class="col-md-6 text-center">
+                    <img src="images/gens-affaires-dessin-anime-meditant-illustration.png" alt=""
+                        class="img-fluid mb-3 formLeft">
+                    <h1>Formulaire de Réflexion Personnelle</h1>
+                </div>
+                <div class="col-md-6">
+                    <form id="reflexionForm">
+                        <!-- Section 1 -->
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label for="email">1- Adresse e-mail</label>
+                                <input type="email" class="form-control" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nom">2- Nom</label>
+                                <input type="text" class="form-control" id="nom" name="nom">
+                            </div>
+                            <div class="form-group">
+                                <label for="prenom">3- Prénom</label>
+                                <input type="text" class="form-control" id="prenom" name="prenom">
+                            </div>
+                            <div class="form-group">
+                                <label for="reves">4- Quels sont tes rêves ?</label>
+                                <textarea class="form-control" id="reves" name="reves"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="ambitions">5- Quels sont tes ambitions ?</label>
+                                <textarea class="form-control" id="ambitions" name="ambitions"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-primary next-btn">Suivant</button>
+                        </div>
+
+                        <!-- Section 2 -->
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label for="partenaire">6- Comment serait ta Partenaire de vie idéale ?</label>
+                                <textarea class="form-control" id="partenaire" name="partenaire"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="plus-tot">7- Qu'aurais-tu aimé savoir plus tôt ?</label>
+                                <textarea class="form-control" id="plus-tot" name="plus-tot"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="laisser">8- Que devrais-tu laisser derrière toi avant de mourir ?</label>
+                                <textarea class="form-control" id="laisser" name="laisser"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="avenir">9- Qui aimerais-tu être dans 5 ans ?</label>
+                                <textarea class="form-control" id="avenir" name="avenir"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="succes">10- Que signifie le succès pour toi ?</label>
+                                <textarea class="form-control" id="succes" name="succes"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-secondary prev-btn">Précédent</button>
+                            <button type="button" class="btn btn-primary next-btn">Suivant</button>
+                        </div>
+
+                        <!-- Section 3 -->
+                        <div class="form-section">
+                            <div class="form-group">
+                                <label for="admiration">11- Quelle personne admires-tu dans ta vie ? Pourquoi ?</label>
+                                <textarea class="form-control" id="admiration" name="admiration"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="peur">12- Qu'est-ce qui te donne la chair de poule ?</label>
+                                <textarea class="form-control" id="peur" name="peur"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="24h">13- Si tu avais 24h à vivre, avec qui voudrais-tu passer les 23h
+                                    restantes ?</label>
+                                <textarea class="form-control" id="24h" name="24h"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="13ans">14- Si tu avais à nouveau 13 ans, que ferais-tu ?</label>
+                                <textarea class="form-control" id="13ans" name="13ans"></textarea>
+                            </div>
+                            <div class="form-group">
+                                <label for="ideal">15- Quel est ton monde idéal ?</label>
+                                <textarea class="form-control" id="ideal" name="ideal"></textarea>
+                            </div>
+                            <button type="button" class="btn btn-secondary prev-btn">Précédent</button>
+                            <button type="submit" class="btn btn-success">Envoyer</button>
+                            <button type="reset" class="btn btn-danger">Réinitialiser</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

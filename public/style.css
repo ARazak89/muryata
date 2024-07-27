@@ -1,0 +1,114 @@
+body {
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;    
+}
+.entete{
+    margin: none;
+    padding: none;
+    height: 20%;
+    /* border: solid 2px red; */
+    background-color: white;
+    width: 100%;
+}
+.logo{
+    width: 18rem;
+    height: 6rem;
+}
+.formul{
+    margin-top: -20px;
+}
+.formulaire{
+    display: flex !important;
+    flex-direction: row !important;
+    background-color: white;
+    box-shadow: 6px -10px 3px 3px rgba(31, 2, 126, 0.9);
+     max-height: 75vh;
+     overflow-y: scroll;
+    
+}
+.formulaire .left{
+    background-color: #53daff;
+    width: 45%;
+}
+.formLeft{
+    width: 15rem ;
+    height: 15rem;
+}
+.formulaire .right{
+    /* border: 2px solid black; */
+    max-height: 80vh;
+    width: 55%;
+    overflow-y: scroll;
+    padding-left: 15px;
+}
+ .form-section {
+    display: none;
+} 
+
+.form-section.active {
+    display: block;
+} 
+/* .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+   
+} */
+h1 {
+    text-align: center;
+    color: #333;
+}
+label {
+    display: block;
+    margin: 10px 10px 5px;
+    color: #333;
+}
+input, textarea {
+    width: 90%;
+    padding: 7px;
+    /* margin-bottom: 10px; */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+input:textarea {
+    height: 100px;
+}
+input:focus, textarea:focus{
+    border: 2px solid red;
+}
+button {
+    width: 25%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.sub{
+    background-color: white;
+    color: green;
+}
+.res{
+    background-color: white;
+    color: red;
+}
+
+.sub:hover {
+    background-color: green;
+    color: white;
+}
+.res:hover {
+    background-color: red;
+    color: white;
+}
+.btn{
+    display: flex;
+    justify-content: space-between;
+    border: none;
+    box-shadow: none;
+}
