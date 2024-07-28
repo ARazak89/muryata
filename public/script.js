@@ -39,14 +39,12 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 });
 
-
-
 document.getElementById('reflexionForm').addEventListener('submit', function(e) {
     e.preventDefault();
 
     const formData = new FormData(this);
 
-    fetch('/send-email', {
+    fetch('/api/send-email', {
         method: 'POST',
         body: JSON.stringify(Object.fromEntries(formData)),
         headers: {
@@ -57,9 +55,7 @@ document.getElementById('reflexionForm').addEventListener('submit', function(e) 
     .then(data => {
         if (data.success) {
             alert('Les réponses ont été envoyées avec succès.');
-            this.reset(); // Reset the form after successful submission
-            currentSectionIndex = 0; // Reset to the first section
-            updateSectionVisibility();
+            this.reset(); // Réinitialiser le formulaire après l'envoi réussi
         } else {
             alert('Une erreur s\'est produite lors de l\'envoi des réponses.');
         }
@@ -69,3 +65,33 @@ document.getElementById('reflexionForm').addEventListener('submit', function(e) 
         alert('Une erreur s\'est produite lors de l\'envoi des réponses.');
     });
 });
+
+
+// document.getElementById('reflexionForm').addEventListener('submit', function(e) {
+//     e.preventDefault();
+
+//     const formData = new FormData(this);
+
+//     fetch('/send-email', {
+//         method: 'POST',
+//         body: JSON.stringify(Object.fromEntries(formData)),
+//         headers: {
+//             'Content-Type': 'application/json'
+//         }
+//     })
+//     .then(response => response.json())
+//     .then(data => {
+//         if (data.success) {
+//             alert('Les réponses ont été envoyées avec succès.');
+//             this.reset(); // Reset the form after successful submission
+//             currentSectionIndex = 0; // Reset to the first section
+//             updateSectionVisibility();
+//         } else {
+//             alert('Une erreur s\'est produite lors de l\'envoi des réponses.');
+//         }
+//     })
+//     .catch(error => {
+//         console.error('Erreur:', error);
+//         alert('Une erreur s\'est produite lors de l\'envoi des réponses.');
+//     });
+// });
