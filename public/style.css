@@ -82,12 +82,24 @@ input:textarea {
 input:focus, textarea:focus{
     border: 2px solid red;
 }
-button {
+.btnSec2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.btnSec3{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.next-btn .prev-btn .env-btn .res-btn {
     width: 25%;
     padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+    font-size: 15px;
+    text-align: center;
 }
 .sub{
     background-color: white;
