@@ -23,7 +23,7 @@ body {
     margin-top: -20px;
 }
 .formulaire{
-    display: flex !important;
+    /* display: flex !important; */
     flex-direction: row !important;
     background-color: white;
     box-shadow: 6px -10px 3px 3px rgba(31, 2, 126, 0.9);
