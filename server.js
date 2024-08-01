@@ -80,7 +80,7 @@ app.post('/api/send-email', (req, res) => {
 
     const mailOptions = {
         from: process.env.EMAIL_USER,
-        to: 'fadilatouhamamarou@gmail.com',
+        to: 'muryataformation@gmail.com',
         subject: 'Formulaire de Réflexion Personnelle',
         text: JSON.stringify(formData, null, 2),
     };
